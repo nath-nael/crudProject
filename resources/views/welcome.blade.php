@@ -21,10 +21,11 @@
         </div>
 </nav>
 <section  class="h-text">
-    <span>GOOD MORNING SIR</span>
-    <h1>STAFF MANAGEMENT</h1>
+    <span>CHIPI CHAPA COMPANY</span>
+    <h1>PRODUCTS</h1>
     <br>
     <a href="/datapegawai">Check</a>
+    <a href="/home">Authorization</a>
 </section>
  
 </body>

@@ -29,21 +29,22 @@
           <form action="/updatedata/{{$data->id}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Full Name</label>
+              <label for="exampleInputEmail1" class="form-label">Product Name</label>
               <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{$data->nama}}">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Age</label>
-              <input type="number"name="umur" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{$data->umur}}">
+              <label for="exampleInputEmail1" class="form-label">Price</label>
+              <input type="number"name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{$data->harga}}">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Address</label>
-              <input type="text" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{$data->alamat}}">
+              <label for="exampleInputEmail1" class="form-label">Stock</label>
+              <input type="number" name="stok" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{$data->stok}}">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Telephone Number</label>
-              <input type="text" name="notelpon"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="0{{$data->notelpon}}">
+              <label for="exampleInputEmail1" class="form-label">Photo</label>
+              <input type="file" name="foto" class="form-control" value="{{$data->foto}}">
             </div>
+    
             
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>

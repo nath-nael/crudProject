@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('kategori');
             $table->string('nama');
-            $table->bigInteger('umur');
-            $table->string('alamat');
-            $table->bigInteger('notelpon');
+            $table->integer('harga');
+            $table->integer('stok');
+            $table->string('foto');
             $table->timestamps();
         });
     }

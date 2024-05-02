@@ -21,7 +21,7 @@
         </div>
 </nav>
     <div class="wording">
-        <h2><center>New Employee Data</center></h2> 
+        <h2><center>New Product Data</center></h2> 
     </div>
     <div class="container">
       <div class="row justify-content-center">
@@ -29,20 +29,24 @@
           <form action="/insertdata" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Full Name</label>
+              <label for="exampleInputEmail1" class="form-label">Kategori Produk</label>
+              <input type="text" name="kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nama Produk</label>
               <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Age</label>
-              <input type="number"name="umur" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1" class="form-label">Harga</label>
+              <input type="number"name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Address</label>
-              <input type="text" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1" class="form-label">Stok</label>
+              <input type="number" name="stok" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Telephone Number</label>
-              <input type="text" name="notelpon"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1" class="form-label">Foto</label>
+              <input type="file" name="foto" class="form-control">
             </div>
             
             <button type="submit" class="btn btn-primary">Submit</button>

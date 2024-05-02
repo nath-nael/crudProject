@@ -14,10 +14,11 @@ class EmployeeSeeder extends Seeder
     public function run(): void
     {
         DB::table('employees')->insert([
-            'nama' => 'Ali AnakBudi',
-            'umur'=> '21',
-            'alamat'=> 'Jalan Kaki 2 No. 7, Jakarta Barat',
-            'notelpon'=> '08111223332',
+            'kategori'=>'alat',
+            'nama' => 'lampu belajar',
+            'harga'=> '21000',
+            'foto'=> '',
+            'stok' => '12',
         ]);
     }
 }
